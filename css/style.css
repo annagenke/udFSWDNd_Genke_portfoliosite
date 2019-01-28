@@ -1,28 +1,34 @@
 * {
   box-sizing: border-box;
 }
-html{
+
+html {
     background-color: #edeae5;
     height: 100%;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     color: #026670;
  }
+
  .top-bar {
   width: 100%;
   background-color: #555;
   vertical-align: top;
 }
-.logo{
+
+.logo {
   width: 50px;
   height: 50px;
   padding: 10px;
 }
- .section-title{
+
+ .section-title {
     color: #026670;
  }
+
 /*hero image was made following a tutorial on w3school */
 .hero-image {
   background-image: linear-gradient(rgba(2, 102, 112, 0.75), rgba(2, 102, 112, 0.75)), url(../img/hero.jpg);
@@ -31,53 +37,57 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  float: left;
 }
+
 .hero-text {
+  justify-self: center;
+  align-self: center;
   text-align: center;
-  position: relative;
   font-size: 150%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #fce181;
 }
-.hero-text img{
 
-  float: left;
-  width: 100px;
-  height: 100px;
+.hero-text h1 {
+  margin:0px;
+}
+
+.project-list {
 }
 .flex-container {
   display: flex;
   flex-flow: row wrap;
+  height: 100%;
+  justify-content: center;
 }
-.image-box{
-        position: relative;
+
+.image-box {
         height: 150px;
         width: 100%;
         overflow: hidden;
 }
+
 img {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
-.work-item{
+
+.work-item {
   width:25%;
   margin-bottom: 50px;
 }
-.work-item-img{
+
+.work-item-img {
   width:100%;
   overflow: hidden;
-  position: relative;
 }
+
 @media screen and (max-width: 900px) {
   .work-item {
     width: 50%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .work-item {
     width: 100%;
